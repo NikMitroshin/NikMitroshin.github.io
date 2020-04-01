@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(56, 58, 71);
+    color: #fff;
+}
+button{
+    cursor: pointer;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+.block-tittle {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.autor{
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.block-users{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-user-update{
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid rgb(138, 130, 130);
+    text-align: center;
+    margin: 2.5%;
+    padding: 5px;
+    position: relative;
+}
+.user__avatar{
+    width: 100px;
+    height: 100px;
+}
+.user__delete{
+    position: absolute;
+    top: 35px;
+    right: 5px;
+}
+.fas{
+    pointer-events: none;
+}
+.new-user__tittle{
+    margin: 20px 0;
+}
+.form-input{
+    margin: 5px auto;   
+    width: 95%;
+    position: relative;
+}
+.form-input__item{
+    width: 60%;
+    height: 25px;
+    padding: 0 10px;
+}
+.user-update{
+    position: absolute;
+    background-color: rgb(12, 11, 11, 0.9);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 2;
+    display: none;
+}
+.form-input-update__item{
+    width: 100%;
+    padding: 1px 5px;
+    box-sizing: border-box;
+}
+.btn-update-user{
+    margin-top: 10px;
+}
+.user__update{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 1px 3.5px;
+}
+.show{
+    display: block;
+}

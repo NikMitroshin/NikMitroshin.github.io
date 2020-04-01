@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7cdb3d570.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="block-tittle">Словарь</h1>
+        <div class="block-add-word">
+            <label class="box-word">
+                <p class="box-word__text">Слово (eng)</p>
+                <input type="text" id="input-eng" placeholder="введите английское слово">
+            </label>
+            <label class="box-word">
+                <p class="box-word__text">Перевод (rus)</p>
+                <input type="text" id="input-rus" placeholder="введите перевод">
+            </label>
+            <button class="btn-save">Добавить слово</button>
+        </div>
+        <h2 class="table-tittle">Список слов:</h2>
+        <table class="table-words" cellspacing="0">
+            <tr class="table-row">
+                <th class="table-col-tittle">Слово</td>
+                <th class="table-col-tittle" colspan="2">Перевод</td>
+            </tr>
+        
+        </table>
+
+    </div>
+
+    <div class="autor">Mitroshin Nikita</div>
+    <script src="main.js"></script>
+</body>
+</html>

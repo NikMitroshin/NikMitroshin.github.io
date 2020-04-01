@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Генератор CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="block-tittle">Генeратор CSS</h1>
+        <div class="block-options">
+            <div class="options-size">
+                <div class="options-size__item">
+                    <p>Укажите ширину:</p>
+                    <input type="range" class="input-size" id="sizeW" min="1" max="400" value ="200">
+                    <div class="result-size" id="result-SW">200 px</div>
+                </div>
+                <div class="options-size__item">
+                    <p>Укажите высоту:</p>
+                    <input type="range" class="input-size" id="sizeH" min="1" max="400" value ="200">
+                    <div class="result-size" id="result-SH">200 px</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-range-top">
+            <div class="top-left-range">
+                <input type="range" class="input-radius" id="tlr" min="0" max="400" value ="0">
+                <div class="result-radius" id="result-tlr">0 px</div>
+            </div> 
+            <div class="top-right-range">
+                <input type="range" class="input-radius" id="trr" min="0" max="400" value ="0">
+                <div class="result-radius" id="result-trr">0 px</div>
+            </div> 
+        </div>
+        <div class="wrapper-middle">
+            <div class="cube" id="cube"></div>
+        </div>
+        <div class="wrapper-range-bottom">
+            <div class="bottom-left-range">
+                <input type="range" class="input-radius" id="blr" min="0" max="400" value ="0">
+                <div class="result-radius" id="result-blr">0 px</div>
+            </div> 
+            <div class="bottom-right-range">
+                <input type="range" class="input-radius" id="brr" min="0" max="400" value ="0">
+                <div class="result-radius" id="result-brr">0 px</div>
+            </div> 
+        </div>
+
+        <div class="main-result">
+            <button type="button" class="btn-result" id="btn-show-result">Получить CSS</button>
+            <div class="main-result-box">
+                <p class="main-result-box__text">Ваш CSS код:</p>
+                <textarea class="main-result-box__code" id="text-result"></textarea>
+            </div>
+            <button type="button" class="btn-result" id="btn-copy-result">Скопировать в буфер</button>
+        </div>
+    </div>
+    <div class="autor">Mitroshin Nikita</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
