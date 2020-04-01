@@ -36,6 +36,29 @@ button{
 	padding: 4px 10px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
+.navigation_react_link{
+	color: #5bc8e7;
+}
+.navigation_react_link-active{
+	animation: react_link 2000ms;
+}
+@keyframes react_link {
+20% {
+	color: #caf3ff;
+}
+40% {
+	color: #5bc8e7;
+}
+60% {
+	color: #caf3ff;
+}
+80% {
+	color: #5bc8e7;
+}
+100% {
+	color: #caf3ff;
+}
+}
 .navigation__link:hover{
 	border-bottom: 1px solid #fff;
 	transition: 0.2s;
@@ -298,15 +321,16 @@ button{
 	display:flex;
 	justify-content: space-around;
 	margin-top:70px;
+	flex-wrap: wrap;
 }
 .react-work{
 	width: 35%;
 	padding:30px;
 	position: relative;
-	height: 290px;
 	background-color: rgba(91, 200, 231, 0.4);
 	color: #fff;
 	box-sizing: border-box;
+	margin-bottom: 40px;
 }
 .react-work:hover{
 	background-color: rgba(91, 200, 231, 0.6);
@@ -315,7 +339,7 @@ button{
 	opacity: 1;
 }
 .react-work__title{
-	font-size: 36px;
+	font-size: 26px;
 	font-weight: normal;
 	text-align: center;
 	letter-spacing: 0.05em;
@@ -333,7 +357,7 @@ button{
 .react-work__link{
 	color: #fff;
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 	right: 30px;
 	font-size: 18px;
 	opacity: 0.35;
@@ -419,7 +443,6 @@ button{
 	}
 };
 
-
 @media screen and (max-height: 1000px) {
 	.box-avatar{
 		width: 400px;
@@ -459,7 +482,6 @@ button{
 	}
 	.react-work{
 		width: 40%;
-		height: 320px;
 	}
 }
 @media screen and (max-height: 700px) {
@@ -484,9 +506,11 @@ button{
 	.location{
 		margin-top: 30px;
 	}
-	.education-tittle,
-	.react-work__title{
+	.education-tittle{
 		font-size: 22px;
+	}
+	.react-work__title{
+		font-size: 18px;
 	}
 	.box-education__text,
 	.location,
@@ -646,15 +670,12 @@ button{
 	.js-work,.react-work{
 		width: 100%;
 		max-width: 350px;
-		height: 300px;
+		/* height: 300px; */
 		margin-bottom: 20px;
 	}
 	.block-react-works{
 		flex-direction: column;
 		align-items: center;
-	}
-	.react-work{
-		height: 260px;
 	}
 	.contacts-list:nth-child(2){
 		display: none;

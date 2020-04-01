@@ -20,3 +20,4 @@ $('.navigation-menu-btn').on('click', ()=> {
 $('.navigation__link').on('click', ()=> {
     $('.navigation').removeClass('navigation-open');
 })
+setInterval(() => $('.navigation_react_link').toggleClass("navigation_react_link-active"),2500);
